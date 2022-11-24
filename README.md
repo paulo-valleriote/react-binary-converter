@@ -33,7 +33,7 @@ Aplicação desenvolvida com fins educativos para praticar a biblioteca.
 - Vite
 ----
 ## Aplicação Online
-#### Veja o projeto [aqui]()
+#### Veja o projeto [aqui](https://binary-conversor.netlify.app/)
 ----
 ### Autor 
 
