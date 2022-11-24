@@ -14,6 +14,7 @@ Conversor de números binários para decimais com `ReactJS` fazendo uso de `useS
 
 Aplicação desenvolvida com fins educativos para praticar a biblioteca.
 
+![img](assets/app.screenshot.png)
 ----
 ## Status
 #### Concluído :white_check_mark:
