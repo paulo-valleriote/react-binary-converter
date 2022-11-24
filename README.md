@@ -36,6 +36,9 @@ Aplicação desenvolvida com fins educativos para praticar a biblioteca.
 ## Aplicação Online
 #### Veja o projeto [aqui](https://binary-conversor.netlify.app/)
 ----
+### Inspiração
+Projeto feito com base em uma suegetão do repositório ![app-ideas](https://github.com/florinpop17/app-ideas)
+----
 ### Autor 
 
 #### [Paulo Valleriote](https://www.linkedin.com/in/paulovalleriote/)
