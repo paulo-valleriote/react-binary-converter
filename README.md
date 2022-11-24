@@ -38,6 +38,7 @@ Aplicação desenvolvida com fins educativos para praticar a biblioteca.
 ----
 ### Inspiração
 Projeto feito com base em uma suegetão do repositório [app-ideas](https://github.com/florinpop17/app-ideas)
+
 ----
 ### Autor 
 
