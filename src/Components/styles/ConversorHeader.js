@@ -1,13 +1,7 @@
 import styled from 'styled-components'
 
-export const StyledConversor = styled.section`
-    // estilização geral da section
-    display: flex;
-    flex-direction: column;
-
-    place-content: center;
-
-    min-height: 94vh;
+export const StyledHeader = styled.header`
+    // estilização geral da header
     
     // estilização do título
     h1 {

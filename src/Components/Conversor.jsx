@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 ;
-import { StyledConversor } from './styles/ConversorSection';
-import { StyledForm } from './styles/Form';
+import { StyledForm } from './styles/ConversorForm';
 
 export function Conversor() {
   const [binaryText, setBinaryText] = useState('0'); // Atualiza o estado do binário digitado
@@ -56,28 +55,20 @@ export function Conversor() {
   }, [binaryText])
 
   return (
-    <StyledConversor>
-      <div>
-        <h1>Bin2Dec</h1>
-        <h3>Binary to decimal online converter</h3>
-      </div>
+    <StyledForm onSubmit={e => binaryTextToDecimal(e)}>
+      <input
+        type="text"
+        id='binaryInput'
+        placeholder='Waiting for a binary number...'
+        autoComplete='off'
+        onChange={e => {
+          setBinaryText(e.target.value)
+          isBinary()
+        }}
+      />
 
-      <StyledForm onSubmit={e => binaryTextToDecimal(e)}>
-        <input
-          type="text"
-          id='binaryInput'
-          placeholder='Waiting for a binary number...'
-          autoComplete='off'
-          onChange={e => {
-            setBinaryText(e.target.value)
-            isBinary()
-          }}
-        />
-
-        <button id='convertButton' type='submit'>CONVERTER</button>
-        <p id='statusDisplay'>{decimalText}</p>
-
-      </StyledForm>
-    </StyledConversor >
+      <button id='convertButton' type='submit'>CONVERTER</button>
+      <p id='statusDisplay'>{decimalText}</p>
+    </StyledForm>
   )
 }
