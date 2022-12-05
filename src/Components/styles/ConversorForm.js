@@ -41,11 +41,10 @@ export const StyledForm = styled.form`
     button {
         margin-bottom: 24px;
 
-        opacity: 0.4;
         width: 45%;
         padding: 8px;
 
-        background-color: #404363;
+        background-color: #329FC7;
         border: none;
 
         border-bottom-left-radius: 4px;
@@ -56,7 +55,9 @@ export const StyledForm = styled.form`
 
         cursor: pointer;
 
-        color: #A8AAB8;
+        color: #FFFFFF;
+
+        opacity: 0.8;
 
         transition: all 0.3s;
 
@@ -68,6 +69,17 @@ export const StyledForm = styled.form`
             box-shadow: 0 0 32px #329FC7;
 
             opacity: 1;
+        }
+
+        &:disabled {
+          color: #A8AAB8;
+          
+          background-color:  #404363;
+          box-shadow: none;
+
+          opacity: 0.5;
+
+          cursor: not-allowed;
         }
     }
 

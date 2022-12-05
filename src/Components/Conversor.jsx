@@ -34,9 +34,10 @@ export function Conversor() {
 
   const isBinary = () => { // Define o que aparece para o usuário no campo de status
     const binText = binaryText
-
+    convertButton.disabled = true;
     if (!binaryInput.value) {
       statusDisplay.textContent = 'Waiting...'
+
       return false
     }
 
@@ -45,13 +46,13 @@ export function Conversor() {
       return false
     }
 
+    convertButton.disabled = false;
     statusDisplay.textContent = 'Typing...'
     return true
   };
 
   useEffect(() => { // Faz o state ser o mais recente, carrega junto com a página
     isBinary(binaryText)
-
   }, [binaryText])
 
   return (
@@ -67,7 +68,7 @@ export function Conversor() {
         }}
       />
 
-      <button id='convertButton' type='submit'>CONVERTER</button>
+      <button id='convertButton' type='submit'>CONVERT</button>
       <p id='statusDisplay'>{decimalText}</p>
     </StyledForm>
   )
